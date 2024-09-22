@@ -12,11 +12,11 @@
     rgba(12, 84, 63, 1) 60%,
     rgba(52, 255, 188, 1) 100%
   );
-  --emphasis-color: #da4a12;
+  --emphasis-color: #eb571d;
   --hint-color: #f1af2b;
-  --soft-color: #e3a4a5;
-  --dark-color: #330007;
-  --light-color: #ffddc4;
+  --soft-color: #ffe0b7;
+  --dark-color: #03091f;
+  --light-color: #ffe7d6;
 }
 
 body {
@@ -31,6 +31,17 @@ header {
   padding: 20px;
   text-align: center;
   font-size: 20px;
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+}
+
+header img {
+  width: 13%;
+  height: 40%;
+  margin-top: 10px;
+  border-radius: 10px;
+  box-shadow: 2px 2px 10px black;
 }
 
 main {
@@ -47,13 +58,20 @@ nav {
   list-style-type: none;
   padding: 10px;
   justify-content: space-between;
-  padding-left: 75px;
-  padding-right: 75px;
+  padding-left: 25%;
+  padding-right: 25%;
   font-size: 20px;
 }
+
 nav a {
   text-decoration: none;
   color: var(--light-color);
+  transition: all 0.1s ease-in;
+}
+
+nav a:hover {
+  text-decoration: none;
+  color: var(--dark-color);
 }
 
 div {
@@ -73,7 +91,7 @@ div {
 
 #work h2,
 #location h2,
-#classes h2 {
+.classes h2 {
   background-color: var(--dark-color);
   color: var(--light-color);
   font-family: "Raleway", sans-serif;
@@ -86,11 +104,11 @@ div {
   grid-column: 1 / 4;
 }
 
-#classes {
+.classes {
   grid-column: 1 / 4;
 }
 
-#classes li {
+.classes li {
   background-color: var(--soft-color);
   margin: 10px;
   padding: 10px;
@@ -110,7 +128,7 @@ div {
   gap: 5px;
 }
 
-#classes p {
+button {
   display: flex;
   justify-content: center;
   flex-wrap: nowrap;
@@ -120,6 +138,8 @@ div {
   font-size: 13px;
   font-weight: bold;
   color: var(--light-color);
+  border: none;
+  cursor: pointer;
 }
 
 footer {
@@ -127,6 +147,14 @@ footer {
   padding: 20px;
   text-align: center;
   color: var(--light-color);
+}
+
+.hide {
+  display: none;
+}
+
+li.complete {
+  background-color: var(--hint-color);
 }
 
 @media only screen and (max-width: 500px) {
@@ -138,5 +166,32 @@ footer {
   }
   .classids {
     display: block;
+  }
+  header img {
+    width: 13%;
+    height: 40%;
+    margin-top: 25px;
+  }
+  header {
+    padding-right: 70px;
+  }
+}
+
+@media only screen and (max-width: 470px) {
+  header img {
+    width: 30%;
+    height: 40%;
+    margin-top: 20px;
+    margin-left: 20px;
+  }
+}
+
+@media only screen and (min-width: 800px) {
+  header img {
+    max-width: 100px;
+    max-height: 100px;
+  }
+  main {
+    margin: 25px 20% 25px 20%;
   }
 }

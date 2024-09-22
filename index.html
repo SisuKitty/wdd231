@@ -5,10 +5,11 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Frontend</title>
     <link rel="stylesheet" href="styles/main.css" />
+    <script src="scripts/main.js" defer></script>
   </head>
   <body>
     <header>
-      <img src="" alt="Sheenas profile picture" />
+      <img src="images/1708545484929.jfif" alt="Sheenas profile picture" />
       <h1>Sheena Gibbons</h1>
     </header>
     <nav>
@@ -33,27 +34,28 @@
           <figcaption>Baobab Trees</figcaption>
         </figure>
       </div>
-      <div id="classes" class="box">
+      <div class="classes box">
         <h2>Frontend Web Development Certificate</h2>
         <section class="filter">
-          <p>All</p>
-          <p>CSE</p>
-          <p>WDD</p>
+          <button id="allFilter">All</button>
+          <button id="CSEfilter">CSE</button>
+          <button id="WDDfilter">WDD</button>
         </section>
         <section class="classids">
-          <li>CSE 110</li>
-          <li>WDD 130</li>
-          <li>CSE 111</li>
+          <li class="complete">CSE 110</li>
+          <li class="complete">WDD 130</li>
+          <li class="complete">CSE 111</li>
           <li>CSE 210</li>
           <li>CSE 131</li>
-          <li>CSE 231</li>
+          <li class="complete">WDD 231</li>
         </section>
       </div>
     </main>
     <footer>
-      <span id="currentyear"></span>
-      <p>Sheena Gibbons</p>
-      <p>Idaho</p>
+      <span>
+        <span id="currentyear"></span>
+        <p>Sheena Gibbons | Idaho</p>
+      </span>
       <p id="lastModified"></p>
     </footer>
   </body>
