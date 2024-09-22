@@ -85,15 +85,15 @@ const courses = [
 // Get the class element
 const course = document.querySelectorAll(".course");
 
-// Apply color change based on the condition
-course.forEach((classes) => {
-  const isCompleted = classes.getAttribute("completed") === "true";
+//
+// course.forEach((classes) => {
+//   const isCompleted = classes.getAttribute("completed") === "true";
 
-  // Apply styling based on the "completed" status
-  if (isCompleted) {
-    item.style.backgroundColor = "lightgreen";
-  }
-});
+//   // Apply styling based on the "completed" status
+//   if (isCompleted) {
+//     item.style.backgroundColor = "lightgreen";
+//   }
+// });
 
 //filter classes
 const filter_CSE = document.getElementById("CSEfilter");
@@ -109,4 +109,11 @@ filter_WDD.addEventListener("click", function () {
       category[i].classList.toggle("hide");
     }
   }
+});
+
+const hamButton = document.getElementById("hamburger");
+const mainNav = document.getElementById("nav");
+
+hamButton.addEventListener("click", () => {
+  mainNav.classList.toggle("show");
 });
