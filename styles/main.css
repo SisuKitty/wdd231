@@ -60,6 +60,7 @@ nav {
   justify-content: space-between;
   padding-left: 25%;
   padding-right: 25%;
+  min-width: 450px;
   font-size: 20px;
 }
 
@@ -69,7 +70,8 @@ nav a {
   transition: all 0.1s ease-in;
 }
 
-nav a:hover {
+nav a:hover,
+nav a:active {
   text-decoration: none;
   color: var(--dark-color);
 }
@@ -128,7 +130,7 @@ div {
   gap: 5px;
 }
 
-button {
+section button {
   display: flex;
   justify-content: center;
   flex-wrap: nowrap;
@@ -155,6 +157,10 @@ footer {
 
 li.complete {
   background-color: var(--hint-color);
+}
+
+#hamburger {
+  display: none;
 }
 
 @media only screen and (max-width: 500px) {
@@ -186,12 +192,27 @@ li.complete {
   }
 }
 
-@media only screen and (min-width: 800px) {
+@media only screen and (min-width: 1000px) {
   header img {
     max-width: 100px;
     max-height: 100px;
   }
   main {
     margin: 25px 20% 25px 20%;
+  }
+}
+
+@media only screen and (max-width: 700px) {
+  nav {
+    display: block;
+    text-align: right;
+    margin-right: 30%;
+  }
+  #hamburger {
+    display: block;
+    font-size: 30px;
+    color: var(--emphasis-color);
+    background-color: transparent;
+    border: none;
   }
 }
