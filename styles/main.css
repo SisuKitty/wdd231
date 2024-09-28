@@ -164,6 +164,14 @@ html {
   height: 100%;
 }
 
+figure img {
+  max-width: 300px;
+}
+
+figcaption {
+  text-align: center;
+}
+
 @media only screen and (max-width: 500px) {
   main {
     display: block;
