@@ -61,7 +61,7 @@ header {
   box-shadow: 4px 4px 10px var(--dark-color);
   border-radius: 10px;
   font-family: var(--primary-font);
-  font-size: 13px;
+  font-size: 18px;
   background-color: var(--emphasis-color);
   color: var(--light-color);
   font-weight: 500;
@@ -178,6 +178,10 @@ footer {
 .weather {
   display: grid;
   grid-template-columns: 1fr 2fr;
+}
+
+.weather img {
+  width: 70%;
 }
 
 .weather p,
