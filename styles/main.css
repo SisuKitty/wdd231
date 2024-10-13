@@ -171,6 +171,50 @@ figcaption {
   text-align: center;
 }
 
+dialog {
+  box-shadow: 4px 4px 10px var(--dark-color);
+  border-radius: 5px;
+  padding: 1rem;
+  width: 90%;
+}
+
+::backdrop {
+  background-color: var(--dark-color);
+  opacity: 50%;
+}
+
+/* animation */
+h1 {
+  animation-duration: 2s;
+  animation-name: slidein;
+}
+
+@keyframes slidein {
+  from {
+    translate: 150vw 0;
+    scale: 200% 1;
+  }
+
+  to {
+    translate: 0 0;
+    scale: 100% 1;
+  }
+}
+
+.box {
+  animation-name: popin 0.25s;
+  animation-timing-function: ease-in;
+}
+
+@keyframes popin {
+  from {
+    transform: scale(0);
+  }
+  to {
+    transform: scale(1);
+  }
+}
+
 @media only screen and (max-width: 500px) {
   main {
     display: block;

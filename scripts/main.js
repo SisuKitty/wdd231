@@ -117,3 +117,38 @@ const mainNav = document.getElementById("nav");
 hamButton.addEventListener("click", () => {
   mainNav.classList.toggle("show");
 });
+
+//display class ids
+const courseDetails = document.querySelector("#course_details");
+const displayCourse = document.querySelector(".classids");
+
+for (let i = 0; i < courses.length; i++) {
+  let newCourse = document.createElement(`li`);
+  newCourse.innerHTML = `<li id="courseID">${courses[i].subject} ${courses[i].number}`;
+  displayCourse.appendChild(newCourse);
+  newCourse.addEventListener("click", () => {
+    displayCourseDetails(courses[i]);
+  });
+}
+
+//display modal
+function displayCourseDetails(course) {
+  courseDetails.innerHTML = "";
+  console.log(course);
+  courseDetails.innerHTML = `
+  <button id="closeModal">x</button>
+  <h2>${course.subject} ${course.number}</h2>
+  <h3>${course.title}</h3>
+  <p><strong>Credits</strong>: ${course.credits}</p>
+  <p><strong>Technologies</strong>: ${course.technology}</p>
+  `;
+
+  displayCourse.addEventListener("click", () => {
+    courseDetails.showModal();
+  });
+
+  const closeModal = document.querySelector("#closeModal");
+  closeModal.addEventListener("click", () => {
+    courseDetails.close();
+  });
+}
