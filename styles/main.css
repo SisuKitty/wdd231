@@ -189,6 +189,11 @@ h1 {
   animation-name: slidein;
 }
 
+.name {
+  text-decoration: none;
+  color: var(--light-color);
+}
+
 @keyframes slidein {
   from {
     translate: 150vw 0;
