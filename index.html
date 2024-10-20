@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Frontend</title>
+    <link rel="stylesheet" href="styles/main.css" />
+    <script src="scripts/main.js" defer></script>
+  </head>
+  <body>
+    <header>
+      <img src="images/1708545484929.jfif" alt="Sheenas profile picture" />
+      <h1><a href="portfolio/index.html" class="name">Sheena Gibbons</a></h1>
+      <button id="hamburger">&#9776;</button>
+    </header>
+    <nav id="nav" class="hide">
+      <li><a href="">Home</a></li>
+      <li><a href="chamber/index.html">Chamber</a></li>
+      <li><a href="https://github.com/SisuKitty">GitHub</a></li>
+      <li>
+        <a href="https://www.linkedin.com/in/sheena-gibbons/">LinkedIn</a>
+      </li>
+    </nav>
+    <main>
+      <div id="work" class="box">
+        <h2>Course Work</h2>
+        <li></li>
+        <li></li>
+        <li></li>
+      </div>
+      <div id="location" class="box">
+        <h2>Boise, Idaho</h2>
+        <figure>
+          <img
+            src="chamber/images/boise-simplot-park-greenbelt-map-0x0.jpg"
+            alt=""
+          />
+          <figcaption>Green Belt</figcaption>
+        </figure>
+      </div>
+      <div class="classes box" class="box">
+        <h2>Frontend Web Development Certificate</h2>
+        <section class="filter">
+          <button id="allFilter">All</button>
+          <button id="CSEfilter">CSE</button>
+          <button id="WDDfilter">WDD</button>
+        </section>
+        <section class="classids"></section>
+        <dialog id="course_details"></dialog>
+      </div>
+    </main>
+    <footer>
+      <span>
+        <span id="currentyear"></span>
+        <p>Sheena Gibbons | Idaho</p>
+      </span>
+      <p id="lastModified"></p>
+    </footer>
+  </body>
+</html>

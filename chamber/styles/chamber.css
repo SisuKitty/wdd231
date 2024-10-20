@@ -1,0 +1,341 @@
+@import url("https://fonts.googleapis.com/css2?family=Raleway:ital,wght@0,100..900;1,100..900&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Raleway:ital,wght@0,100..900;1,100..900&family=Roboto+Slab:wght@100..900&display=swap");
+
+:root {
+  --primary-font: "Raleway", sans-serif;
+  --primary-font-thin: "Raleway", sans-serif;
+  --secondary-font: "Roboto Slab", serif;
+  --gradient: linear-gradient(
+    90deg,
+    rgba(0, 44, 56, 1) 0%,
+    rgba(0, 36, 34, 1) 35%,
+    rgba(12, 84, 63, 1) 60%,
+    rgba(52, 255, 188, 1) 100%
+  );
+  --emphasis-color: #eb571d;
+  --hint-color: #f1af2b;
+  --soft-color: #ffe0b7;
+  --dark-color: #03091f;
+  --light-color: #ffe7d6;
+}
+
+body {
+  font-family: var(--secondary-font);
+  margin: 0;
+  height: 100%;
+}
+
+header {
+  background-color: var(--dark-color);
+  color: var(--light-color);
+  font-family: var(--primary-font);
+  font-size: 20px;
+  display: grid;
+  padding: 20px 15% 20px 15%;
+  grid-template-columns: 2fr 3fr 7fr 3fr;
+  position: fixed;
+  margin-top: -400px;
+  z-index: 2;
+}
+
+.logoBox {
+  grid-row: 1 / 3;
+  align-self: center;
+}
+
+.boiseLogo {
+  width: 70%;
+  height: 70%;
+  min-width: 100px;
+}
+
+.mainButton {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  margin-top: -250px;
+  width: 35%;
+  max-width: 300px;
+  height: 5%;
+  box-shadow: 4px 4px 10px var(--dark-color);
+  border-radius: 10px;
+  font-family: var(--primary-font);
+  font-size: 18px;
+  background-color: var(--emphasis-color);
+  color: var(--light-color);
+  font-weight: 500;
+  transition: background-color 0.2s;
+}
+
+.mainButton:hover {
+  background-color: var(--light-color);
+  color: var(--dark-color);
+}
+
+.cityInfo {
+  display: grid;
+  grid-template-columns: 2fr 1fr 1fr;
+  gap: 25px;
+  margin: 400px 0px 0px 0px;
+}
+main {
+  max-width: 1500px;
+  margin: 15%;
+}
+
+nav {
+  display: flex;
+  flex-direction: row;
+  gap: 50px;
+  font-family: var(--primary-font);
+  list-style-type: none;
+  align-self: flex-end;
+  font-size: 20px;
+  grid-column: 4 / 5;
+  transition: transform 0.2s;
+}
+
+nav a:hover,
+nav a:active {
+  text-decoration: none;
+  color: var(--emphasis-color);
+}
+
+#chamber {
+  grid-row: 2;
+  grid-column: 2;
+  margin-top: -15px;
+}
+
+.hero {
+  display: block;
+}
+
+.heroImg {
+  position: fixed;
+  width: 100%;
+  z-index: -1;
+  margin-top: -400px;
+  min-width: 1300px;
+  min-height: 100%;
+}
+
+li a {
+  text-decoration: none;
+  color: var(--light-color);
+  transition: all 0.1s ease-in;
+}
+
+div {
+  box-shadow: 4px 4px 10px var(--dark-color);
+  border-radius: 5px;
+  padding-bottom: 15px;
+  background: white;
+}
+
+.cityInfo div {
+  min-width: 270px;
+}
+
+h2 {
+  background-color: var(--dark-color);
+  color: var(--light-color);
+  font-family: "Raleway", sans-serif;
+  font-weight: 600;
+  padding: 10px;
+  margin-top: 0;
+  border-radius: 5px 5px 0 0;
+  font-size: 23px;
+  grid-column: 1 / 4;
+}
+
+footer {
+  background-color: var(--emphasis-color);
+  padding: 20px;
+  text-align: center;
+  color: var(--light-color);
+}
+
+#hamburger {
+  display: none;
+}
+
+.members {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  gap: 25px;
+  margin: 100px 0px 100px 0px;
+}
+
+.business {
+  box-shadow: 4px 4px 10px var(--dark-color);
+  border-radius: 5px;
+  background: white;
+  min-width: 270px;
+}
+
+.weather {
+  display: grid;
+  grid-template-columns: 1fr 2fr;
+}
+
+.weather img {
+  width: 70%;
+}
+
+.weather p,
+.weather img {
+  padding: 0px 20px 0px 20px;
+}
+
+.weather p {
+  margin-top: -10px;
+}
+
+.forecast {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  padding: 20px;
+  text-align: center;
+}
+
+.forecast p {
+  border: var(--emphasis-color) solid 1px;
+  min-width: none;
+  padding: 20px;
+}
+
+h3 {
+  background-color: var(--emphasis-color);
+  color: var(--light-color);
+  padding: 10px 20px 10px 20px;
+  margin-bottom: -17px;
+}
+
+.businessInfo {
+  display: grid;
+  grid-template-columns: 1fr 3fr;
+  grid-template-rows: 1fr 1fr 1fr;
+  padding: 0px 20px 10px 20px;
+}
+
+.businessLogo {
+  grid-row: 1 / 4;
+}
+
+.businessName,
+.tagline {
+  text-align: center;
+}
+
+.tagline {
+  border-bottom: var(--emphasis-color) solid 1px;
+  padding-bottom: 20px;
+}
+
+footer {
+  display: grid;
+  grid-template-columns: 1fr 2fr 1fr;
+  padding: 20px 15% 20px 15%;
+}
+
+.projectInfo {
+  grid-column: 3 / 4;
+  text-align: right;
+  min-width: 165px;
+}
+
+.chamberInfo {
+  text-align: left;
+  min-width: 165px;
+}
+
+.intro {
+  color: var(--light-color);
+}
+
+.newSection {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 10fr;
+  margin-bottom: -80px;
+  margin-top: 40px;
+  gap: 30px;
+}
+.gridView,
+.listView {
+  height: 25px;
+  margin-top: 25px;
+  background-color: var(--light-color);
+  color: var(--emphasis-color);
+  border-radius: 5px;
+  font-size: 16px;
+}
+
+.list {
+  display: block;
+}
+
+.list .business {
+  display: grid;
+  grid-template-columns: 1fr 1fr 3fr;
+  margin-top: 30px;
+}
+
+.list .business .businessInfo {
+  display: flex;
+  justify-content: space-between;
+  padding-left: 100px;
+  padding-right: 100px;
+}
+
+.list .business .tagline {
+  border-bottom: none;
+}
+
+.grid {
+  display: grid;
+}
+
+@media screen and (max-width: 700px) {
+  #hamburger {
+    display: block;
+    font-size: 30px;
+    color: var(--emphasis-color);
+    background-color: transparent;
+    border: none;
+  }
+  .cityInfo {
+    display: block;
+  }
+  .cityInfo div {
+    margin: 20px;
+  }
+  .show {
+    display: flex;
+  }
+  nav {
+    display: none;
+  }
+  footer {
+    width: 100%;
+  }
+  .gridView,
+  .listView {
+    display: none;
+  }
+}
+
+@media screen and (max-width: 1400px) {
+  .cityInfo {
+    grid-template-columns: 1fr 1fr;
+  }
+
+  .events {
+    grid-column: 1/3;
+  }
+
+  .members {
+    display: block;
+  }
+}

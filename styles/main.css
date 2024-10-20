@@ -1,0 +1,289 @@
+@import url("https://fonts.googleapis.com/css2?family=Raleway:ital,wght@0,100..900;1,100..900&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Raleway:ital,wght@0,100..900;1,100..900&family=Roboto+Slab:wght@100..900&display=swap");
+
+:root {
+  --primary-font: "Raleway", sans-serif;
+  --primary-font-thin: "Raleway", sans-serif;
+  --secondary-font: "Roboto Slab", serif;
+  --gradient: linear-gradient(
+    90deg,
+    rgba(0, 44, 56, 1) 0%,
+    rgba(0, 36, 34, 1) 35%,
+    rgba(12, 84, 63, 1) 60%,
+    rgba(52, 255, 188, 1) 100%
+  );
+  --emphasis-color: #eb571d;
+  --hint-color: #f1af2b;
+  --soft-color: #ffe0b7;
+  --dark-color: #03091f;
+  --light-color: #ffe7d6;
+}
+
+body {
+  font-family: var(--secondary-font);
+  margin: 0;
+  height: 100%;
+}
+
+header {
+  background-color: var(--dark-color);
+  color: var(--light-color);
+  font-family: var(--primary-font);
+  padding: 20px;
+  text-align: center;
+  font-size: 20px;
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+}
+
+header img {
+  width: 13%;
+  height: 40%;
+  margin-top: 10px;
+  border-radius: 10px;
+  box-shadow: 2px 2px 10px black;
+}
+
+main {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  gap: 25px;
+  margin: 25px;
+}
+
+nav {
+  background-color: var(--emphasis-color);
+  display: flex;
+  font-family: var(--primary-font);
+  list-style-type: none;
+  padding: 10px;
+  justify-content: space-between;
+  padding-left: 25%;
+  padding-right: 25%;
+  min-width: 450px;
+  font-size: 20px;
+}
+
+nav a {
+  text-decoration: none;
+  color: var(--light-color);
+  transition: all 0.1s ease-in;
+}
+
+nav a:hover,
+nav a:active {
+  text-decoration: none;
+  color: var(--dark-color);
+}
+
+div {
+  box-shadow: 4px 4px 10px var(--dark-color);
+  border-radius: 5px;
+  padding-bottom: 15px;
+}
+
+#work {
+  grid-column-start: 1;
+  grid-column-end: 3;
+}
+
+.box li {
+  padding: 0 15px 0 15px;
+}
+
+#work h2,
+#location h2,
+.classes h2 {
+  background-color: var(--dark-color);
+  color: var(--light-color);
+  font-family: "Raleway", sans-serif;
+  text-align: center;
+  font-weight: 600;
+  padding: 10px;
+  margin-top: 0;
+  border-radius: 5px 5px 0 0;
+  font-size: 18px;
+  grid-column: 1 / 4;
+}
+
+.classes {
+  grid-column: 1 / 4;
+}
+
+.classes li {
+  background-color: var(--soft-color);
+  margin: 10px;
+  padding: 10px;
+  border-radius: 5px;
+}
+
+.classids {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  list-style-type: none;
+  text-align: center;
+}
+
+.filter {
+  display: flex;
+  justify-content: center;
+  gap: 5px;
+}
+
+section button {
+  display: flex;
+  justify-content: center;
+  flex-wrap: nowrap;
+  background-color: var(--emphasis-color);
+  width: 7em;
+  border-radius: 5px;
+  font-size: 13px;
+  font-weight: bold;
+  color: var(--light-color);
+  border: none;
+  cursor: pointer;
+}
+
+footer {
+  background-color: var(--emphasis-color);
+  padding: 20px;
+  text-align: center;
+  color: var(--light-color);
+}
+
+li.complete {
+  background-color: var(--hint-color);
+}
+
+#hamburger {
+  display: none;
+}
+
+html {
+  height: 100%;
+}
+
+figure img {
+  max-width: 300px;
+}
+figcaption {
+  text-align: center;
+}
+
+dialog {
+  box-shadow: 4px 4px 10px var(--dark-color);
+  border-radius: 5px;
+  padding: 1rem;
+  width: 90%;
+}
+
+::backdrop {
+  background-color: var(--dark-color);
+  opacity: 50%;
+}
+
+/* animation */
+h1 {
+  animation-duration: 2s;
+  animation-name: slidein;
+}
+
+.name {
+  text-decoration: none;
+  color: var(--light-color);
+}
+
+@keyframes slidein {
+  from {
+    translate: 150vw 0;
+    scale: 200% 1;
+  }
+
+  to {
+    translate: 0 0;
+    scale: 100% 1;
+  }
+}
+
+.box {
+  animation-name: popin 0.25s;
+  animation-timing-function: ease-in;
+}
+
+@keyframes popin {
+  from {
+    transform: scale(0);
+  }
+  to {
+    transform: scale(1);
+  }
+}
+
+@media only screen and (max-width: 500px) {
+  main {
+    display: block;
+  }
+  div {
+    margin: 20px;
+  }
+  .classids {
+    display: block;
+  }
+  header img {
+    width: 13%;
+    height: 40%;
+    margin-top: 25px;
+  }
+  header {
+    padding-right: 70px;
+  }
+  .show {
+    display: block;
+  }
+}
+
+@media only screen and (max-width: 470px) {
+  header img {
+    width: 30%;
+    height: 40%;
+    margin-top: 20px;
+    margin-left: 20px;
+  }
+  .show {
+    display: block;
+  }
+}
+
+@media only screen and (min-width: 1000px) {
+  header img {
+    max-width: 100px;
+    max-height: 100px;
+  }
+  main {
+    margin: 25px 20% 25px 20%;
+  }
+}
+
+@media only screen and (max-width: 700px) {
+  nav {
+    display: block;
+    text-align: right;
+    min-width: 0px;
+    padding-right: 10%;
+    display: none;
+  }
+  #hamburger {
+    display: block;
+    font-size: 30px;
+    color: var(--emphasis-color);
+    background-color: transparent;
+    border: none;
+  }
+  li {
+    min-width: 0px;
+  }
+  .show {
+    display: block;
+  }
+}

@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta property="og:title" content="Boise Chamber of Commerce" />
+    <meta property="og:type" content="Capital city mock website" />
+    <meta
+      property="fb:app_id"
+      content="https://www.facebook.com/boisemetrochamber/"
+    />
+    <meta
+      property="og:url"
+      content="https://sisukitty.github.io/wdd231/directory.html"
+    />
+    <meta
+      property="og:description"
+      content="Boise Metro Chamber of Commerce mock informational website."
+    />
+    <meta
+      property="og:image"
+      content="https://ia.media-imdb.com/images/rock.jpg"
+    />
+    <title>Document</title>
+    <link rel="icon" href="images/_f726f1d4-c8d4-44b1-9dc6-6b33897a0c22.png" />
+    <link rel="stylesheet" href="styles/join.css" />
+    <script src="scripts/join.js" defer></script>
+    <script src="scripts/date&time.js" defer></script>
+  </head>
+
+  <body>
+    <header>
+      <a href="index.html" class="logoBox">
+        <img src="images/logo.png" alt="Boise chamber icon" class="boiseLogo"
+      /></a>
+      <h1>Boise</h1>
+      <p id="chamber">Chamber of Commerce</p>
+      <button id="hamburger">&#9776;</button>
+      <nav id="nav">
+        <li><a href="index.html">Home</a></li>
+        <li><a href="directory.html">Directory</a></li>
+        <li><a href="join.html">Join</a></li>
+        <li>
+          <a href="discover.html">Discover</a>
+        </li>
+      </nav>
+    </header>
+    <main>
+        <dialog method="get" action="thankyou.html">
+        </dialog>
+        <section class="container">
+        <!-- Form Section -->
+        <div class="form-section">
+          <form method="get" action="thankyou.html">
+            <label for="first-name">First Name:</label><br>
+            <input type="text" id="first-name" name="first_name" title="First Name" autocomplete="given-name" required><br><br>
+            
+            <label for="last-name">Last Name:</label><br>
+            <input type="text" id="last-name" name="last_name" title="Last Name" autocomplete="family-name" required><br><br>
+            
+            <label for="org-title">Organizational Title:</label><br>
+            <input type="text" id="org-title" name="organization_title" title="Organization Title" autocomplete="organization-title" pattern="[A-Za-z-\s]{7,}" required><br><br>
+            
+            <label for="email">Email:</label><br>
+            <input type="email" id="email" name="email" title="Email Address" autocomplete="email" placeholder="example@domain.com" required><br><br>
+
+            <label for="phone">Mobile Phone:</label><br>
+            <input type="tel" id="phone" name="phone" title="Mobile Phone Number" autocomplete="tel" required><br><br>
+
+            <label for="org-name">Organization's Name:</label><br>
+            <input type="text" id="org-name" name="organization" title="Organization Name" autocomplete="organization" required><br><br>
+
+            <label for="membership">Membership Level:</label><br>
+            <select id="membership" name="membership_level" required>
+              <option value="NP Membership">NP Membership (Non-profit, No Fee)</option>
+              <option value="Bronze Membership">Bronze Membership</option>
+              <option value="Silver Membership">Silver Membership</option>
+              <option value="Gold Membership">Gold Membership</option>
+            </select><br><br>
+
+            <label for="description">Organization's Description:</label><br>
+            <textarea id="description" name="organization_description" title="Organization Description" rows="4" cols="50"></textarea><br><br>
+
+            <input type="hidden" name="timestamp" id="timestamp" value="">
+
+            <input type="submit" value="Submit">
+          </form>
+        </section>
+
+        <!-- Membership Cards -->
+        <section class="membership-cards"></section>
+
+        <!-- Modal for Memberships -->
+        <dialog class="modal hide"></dialog>
+    </main>
+  </body>
+</html>
+<footer>
+      <section class="chamberInfo">
+        <p>Boise Metro Chamber of Commerce</p>
+        <p>1101 W Front St STE 100, Boise, ID 83702</p>
+        <p>(208) 472-5200</p>
+      </section>
+      <section class="projectInfo">
+        <p>WDD231 Class Project</p>
+        <p>Sheena Gibbons</p>
+        <span id="currentyear"></span>
+        <p id="lastModified"></p>
+      </section>
+    </footer>
+  </body>
+</html>

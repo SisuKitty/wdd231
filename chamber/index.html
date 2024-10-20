@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta property="og:title" content="Boise Chamber of Commerce" />
+    <meta property="og:type" content="Capital city mock website" />
+    <meta
+      property="fb:app_id"
+      content="https://www.facebook.com/boisemetrochamber/"
+    />
+    <meta
+      property="og:url"
+      content="https://sisukitty.github.io/wdd231/directory.html"
+    />
+    <meta
+      property="og:description"
+      content="Boise Metro Chamber of Commerce mock informational website."
+    />
+    <meta
+      property="og:image"
+      content="https://ia.media-imdb.com/images/rock.jpg"
+    />
+    <title>Document</title>
+    <link
+      rel="icon"
+      href="images/_f726f1d4-c8d4-44b1-9dc6-6b33897a0c22.png"
+    />
+    <link rel="stylesheet" href="styles/chamber.css" />
+    <script src="scripts/chamber.js" defer></script>
+    <script src="scripts/date&time.js" defer></script>
+  </head>
+
+  <body>
+    <header>
+      <a href="index.html" class="logoBox">
+        <img
+          src="images/logo.png"
+          alt="Boise chamber icon"
+          class="boiseLogo"
+      /></a>
+      <h1>Boise</h1>
+      <p id="chamber">Chamber of Commerce</p>
+      <button id="hamburger">&#9776;</button>
+      <nav id="nav" class="hide">
+        <li><a href="index.html">Home</a></li>
+        <li><a href="directory.html">Directory</a></li>
+        <li><a href="join.html">Join</a></li>
+        <li>
+          <a href="discover.html">Discover</a>
+        </li>
+      </nav>
+    </header>
+    <section class="hero"></section>
+        <img
+          src="images/Boise_FeaturedImg.jpg"
+          alt="Boise hero image"
+          class="heroImg"
+        />
+      </section>
+    <main>
+      <button class="mainButton">Keynote Tickets</button>
+      <section class="cityInfo">
+        <div class="events">
+          <h2>Events</h2>
+          <li></li>
+          <li></li>
+          <li></li>
+        </div>
+        <div class="weather">
+          <h2>Current Weather</h2>
+          <img src="images/cloudy_17283965.png" alt="weather visual" />
+          <section class="weatherDetails">
+            <p class="degrees"><strong>75</strong>&#176;F</p>
+            <p class="currentWeather">Partly Cloudy</p>
+            <p class="highTemp">High: 85&#176;</p>
+            <p class="lowTemp">Low: 51&#176;</p>
+            <p class="humididty">34%</p>
+            <p class="sunrise">7:30am</p>
+            <p class="sunset">9:59pm</p>
+          </section>
+        </div>
+        <div class="forecastBox">
+          <h2>Weather Forecast</h2>
+          <section class="forecast">
+            <h3 class="todaysDay">Mon</h3>
+            <h3 class="tomorrowsDay">Tues</h3>
+            <h3 class="followingDay">Wed</h3>
+            <p class="todaysTemp"><strong>90</strong>&#176;F</p>
+            <p class="tomorrowsTemp"><strong>89</strong>&#176;F</p>
+            <p class="followingTemp"><strong>68</strong>&#176;F</p>
+          </section>
+        </div>
+      </section>
+      <section class="newSection">
+        <h1 class="intro">Members</h1>
+        <button class="gridView">Grid</button>
+        <button class="listView">List</button>
+      </section>
+      <section class="members" class="grid">
+        <section class="business">
+          <h1 class="businessName">Business Name</h1>
+          <p class="tagline">Business Tag Line</p>
+          <section class="businessInfo"><img src="" alt="businessLogo" class="businessLogo"/>
+          <p class="email"><strong>EMAIL:</strong> info@gmail.com</p>
+          <p class="phone"><strong>PHONE:</strong> (800)555-1234</p>
+          <p class="url"><strong>URL:</strong> mybusiness.com</p>
+          </section>
+        </section>
+        <section class="business">
+          <h1 class="businessName">Business Name</h1>
+          <p class="tagline">Business Tag Line</p>
+          <section class="businessInfo"><img src="" alt="businessLogo" class="businessLogo"/>
+          <p class="email"><strong>EMAIL:</strong> info@gmail.com</p>
+          <p class="phone"><strong>PHONE:</strong> (800)555-1234</p>
+          <p class="url"><strong>URL:</strong> mybusiness.com</p>
+          </section>
+        </section>
+        <section class="business">
+          <h1 class="businessName">Business Name</h1>
+          <p class="tagline">Business Tag Line</p>
+          <section class="businessInfo"><img src="" alt="businessLogo" class="businessLogo"/>
+          <p class="email"><strong>EMAIL:</strong> info@gmail.com</p>
+          <p class="phone"><strong>PHONE:</strong> (800)555-1234</p>
+          <p class="url"><strong>URL:</strong> mybusiness.com</p>
+          </section>
+        </section>
+      </section>
+    </main>
+    <footer>
+      <section class="chamberInfo">
+        <p>Boise Metro Chamber of Commerce</p>
+        <p>1101 W Front St STE 100, Boise, ID 83702</p>
+        <p>(208) 472-5200</p>
+      </section>
+      <section class="projectInfo">
+        <p>WDD231 Class Project</p>
+        <p>Sheena Gibbons</p>
+        <span id="currentyear"></span>
+        <p id="lastModified"></p>
+      </section>
+    </footer>
+  </body>
+</html>
