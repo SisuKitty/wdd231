@@ -3,6 +3,8 @@ const year = document.querySelector("#currentyear");
 
 const today = new Date();
 
+console.log(year);
+
 year.innerHTML = ` <span class="highlight">&copy;${today.getFullYear()} Boise Chamber of Commerce</span>`;
 
 // determines date last modified for footer
