@@ -1,0 +1,190 @@
+@import url("https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Capriola&display=swap");
+
+:root {
+  --primary-color: #19947b;
+  --secondary-color: #fc8327;
+  --accent1-color: #1f2b33;
+  --accent2-color: #7ae6b7;
+  --neutral-color: #d1ffeb;
+
+  --heading-font: "Capriola", sans-serif;
+  --paragraph-font: "Inter", sans-serif;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+a {
+  text-decoration: none; /* Remove underline */
+  color: inherit; /* Use the current text color */
+}
+
+body {
+  min-height: 100vh;
+  background-color: #fafafa;
+  margin: 0;
+  padding: 0;
+  font-family: var(--paragraph-font);
+  font-size: 23px;
+}
+
+header,
+footer {
+  background-color: var(--primary-color);
+  width: 110%;
+  display: flex;
+  padding: 30px;
+  box-sizing: border-box;
+  color: var(--neutral-color);
+  align-items: center;
+  justify-content: space-between;
+  padding: 20px 20%;
+  & img {
+    width: 100px;
+  }
+}
+
+nav {
+  margin-left: auto;
+}
+
+nav ul {
+  display: flex;
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+nav a {
+  text-decoration: none;
+  color: var(--neutral-color);
+  transition: all 0.3s ease;
+}
+
+nav li {
+  margin-left: 70px;
+}
+
+nav a:hover {
+  color: #ff8121;
+}
+
+#hamburger {
+  display: none;
+}
+
+main {
+  padding: 100px 20%;
+}
+
+.projectInfo {
+  text-align: right;
+}
+
+.social {
+  text-align: left;
+}
+
+.emphasis {
+  color: var(--secondary-color);
+}
+
+.focus {
+  font-family: var(--heading-font);
+  font-size: 4em;
+  text-align: center;
+}
+
+h1 {
+  color: var(--primary-color);
+  font-size: 65px;
+}
+
+button,
+input,
+select {
+  padding: 6px 20px; /* Adjust padding to make the button bigger */
+  font-size: 16px;
+  border-radius: 8px;
+  font-size: 23px;
+  box-shadow: 0px 5px 8px var(--accent2-color);
+  margin-right: 10px;
+}
+
+.filled_button {
+  border: none;
+  background-color: var(--primary-color);
+  color: white;
+}
+
+.hollow_button {
+  border: 2px solid var(--primary-color);
+  padding: 5px 19px;
+  background: white;
+  color: var(--primary-color);
+}
+
+.sectioned {
+  display: grid;
+  grid-template-columns: 3fr 1fr;
+  margin: 0px 50px;
+  margin-bottom: 200px;
+}
+
+section img {
+  max-width: 500%;
+  margin-right: -500px;
+}
+
+section div {
+  margin-top: 10%;
+}
+
+form {
+  padding: 75px;
+  margin: 5% auto;
+  width: 600px;
+  box-shadow: 0 10px 16px rgba(0, 0, 0, 0.07);
+}
+
+label {
+  color: var(--secondary-color);
+  font-weight: 600;
+}
+
+.user_input {
+  width: 90%;
+  margin-top: 5px;
+}
+
+@media only screen and (max-width: 1600px) {
+  .profile {
+    position: fixed;
+    width: 1200px;
+    right: 100px;
+    top: -200px;
+    z-index: -1;
+  }
+}
+
+@media only screen and (max-width: 1050) {
+  .profile {
+    position: relative;
+    display: none;
+  }
+}
+
+@media only screen and (max-width: 845) {
+  button {
+    padding: 20px;
+  }
+  #hamburger {
+    display: block;
+    font-size: 30px;
+    color: var(--emphasis-color);
+    background-color: transparent;
+    border: none;
+  }
+}

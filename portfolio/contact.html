@@ -1,0 +1,164 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta property="og:title" content="Boise Chamber of Commerce" />
+    <meta property="og:type" content="Capital city mock website" />
+    <meta
+      property="fb:app_id"
+      content="https://www.facebook.com/boisemetrochamber/"
+    />
+    <meta
+      property="og:url"
+      content="https://sisukitty.github.io/wdd231/directory.html"
+    />
+    <meta
+      property="og:description"
+      content="Boise Metro Chamber of Commerce mock informational website."
+    />
+    <meta
+      property="og:image"
+      content="https://ia.media-imdb.com/images/rock.jpg"
+    />
+    <title>Document</title>
+    <link rel="icon" href="images/logo-01.png" />
+    <link rel="stylesheet" href="styles/navfooter.css" />
+    <link rel="stylesheet" href="styles/carousel.css" />
+    <script src="scripts/date.js" defer></script>
+    <script src="scripts/carousel.js" defer></script>
+  </head>
+
+  <body>
+    <header>
+      <a href="index.html" class="logoBox">
+        <img
+          src="images/logo-01.png"
+          alt="Sheena Gibbons Initials Logo"
+          class="Logo"
+      /></a>
+      <button id="hamburger">&#9776;</button>
+      <nav>
+        <ul>
+          <li><a href="index.html">Home</a></li>
+          <li><a href="portfolio.html">Projects</a></li>
+          <li><a href="about.html">About</a></li>
+          <li><a href="contact.html">Contact</a></li>
+        </ul>
+      </nav>
+    </header>
+    <main>
+      <a href="mailto:gibbonsgraphics1@gmail.com" class="emphasis focus"
+        >gibbonsgraphics1@gmail.com</a
+      >
+      <section class="container">
+        <!-- Form Section -->
+        <div class="form-section">
+          <form method="get" action="thankyou.html">
+            <label for="first-name">First Name*</label><br />
+            <input
+              type="text"
+              id="first-name"
+              class="user_input"
+              name="first_name"
+              title="First Name"
+              autocomplete="given-name"
+              required
+            /><br /><br />
+
+            <label for="last-name">Last Name*</label><br />
+            <input
+              type="text"
+              id="last-name"
+              class="user_input"
+              name="last_name"
+              title="Last Name"
+              autocomplete="family-name"
+              required
+            /><br /><br />
+
+            <label for="email">Email*</label><br />
+            <input
+              type="email"
+              id="email"
+              class="user_input"
+              name="email"
+              title="Email Address"
+              autocomplete="email"
+              placeholder="example@domain.com"
+              required
+            /><br /><br />
+
+            <label for="phone">Mobile Phone</label><br />
+            <input
+              type="tel"
+              id="phone"
+              class="user_input"
+              name="phone"
+              title="Mobile Phone Number"
+              autocomplete="tel"
+            /><br /><br />
+
+            <label for="org-name">Organization's Name</label><br />
+            <input
+              type="text"
+              id="org-name"
+              class="user_input"
+              name="organization"
+              title="Organization Name"
+              autocomplete="organization"
+            /><br /><br />
+
+            <label for="membership">Purpose*</label><br />
+            <select id="membership" name="membership_level" required>
+              <option
+                value="0"
+                disabled="true"
+                selected="none"
+                class="inactive"
+              >
+                Select your option
+              </option>
+              <option value="NP Membership">Consultation</option>
+              <option value="Bronze Membership">Application</option>
+              <option value="Silver Membership">Collaboration</option>
+              <option value="Gold Membership">General Inquiry</option></select
+            ><br /><br />
+
+            <label for="description">Details*</label><br />
+            <textarea
+              id="description"
+              class="user_input"
+              name="description"
+              title="Description"
+              rows="4"
+              cols="50"
+            ></textarea
+            ><br /><br />
+
+            <input type="hidden" name="timestamp" id="timestamp" value="" />
+
+            <input type="submit" value="Submit" class="filled_button submit" />
+            <p>* required</p>
+          </form>
+        </div>
+      </section>
+    </main>
+    <footer>
+      <div class="social">
+        <a href="https://www.linkedin.com/in/sheena-gibbons/"
+          ><img src="images/Linkedin-02.png" alt="Linkedin"
+        /></a>
+        <a href="https://www.instagram.com/gibbons.graphics/"
+          ><img src="images/insta-02.png" alt="Instagram"
+        /></a>
+        <a href=""><img src="images/facebook-02.png" alt="Facebook" /></a>
+      </div>
+      <div class="projectInfo">
+        <p>Sheena Gibbons</p>
+        <span id="currentyear"></span>
+        <p id="lastModified"></p>
+      </div>
+    </footer>
+  </body>
+</html>
