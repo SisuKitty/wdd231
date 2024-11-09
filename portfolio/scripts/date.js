@@ -27,3 +27,4 @@ function toggleNav() {
 }
 
 document.getElementById("menu-icon").addEventListener("click", toggleNav);
+

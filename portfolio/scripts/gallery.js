@@ -40,3 +40,4 @@ $(document).ready(function () {
     $(".gallery").fadeOut("slow");
   });
 });
+
